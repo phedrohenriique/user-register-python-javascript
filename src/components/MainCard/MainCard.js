@@ -5,7 +5,6 @@ import {
   Button,
   useControllableState,
 } from '@chakra-ui/react';
-import { Link } from 'react-router-dom';
 import react from 'react';
 
 export default function MainCard() {

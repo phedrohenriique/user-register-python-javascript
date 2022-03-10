@@ -3,18 +3,19 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
 
-import { MainCard } from './components/MainCard';
-import { AppRouting } from './routes'
+import { MainCard, Navigator } from './components';
 
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
+import { routes } from './routes/AppRouting';
 
 ReactDOM.render(
   <StrictMode>
     <ChakraProvider theme={theme}>
       <BrowserRouter>
+        <Navigator/>
         <Routes>
-          <AppRouting />
+          <Route path={routes.home} element={<MainCard />}></Route>
         </Routes>
       </BrowserRouter>
     </ChakraProvider>
