@@ -3,7 +3,12 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
 
-import { MainCard, Navigator } from './components';
+import { 
+  MainCard, 
+  Navigator,
+  Account,
+  Info 
+} from './components';
 
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
@@ -15,7 +20,8 @@ ReactDOM.render(
       <BrowserRouter>
         <Navigator/>
         <Routes>
-          <Route path={routes.home} element={<MainCard />}></Route>
+          <Route path={routes.home} element={<Info/>}></Route>
+          <Route path={routes.login} element={<Account></Account>}></Route>
         </Routes>
       </BrowserRouter>
     </ChakraProvider>

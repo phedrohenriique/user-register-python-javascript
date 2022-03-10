@@ -22,9 +22,9 @@ export default function Navigator() {
                     width='50%'
                     borderRadius='5px'
                 >
-                    <Button><Link to={routes.home}>Home</Link></Button>
-                    <Button><Link to={routes.login}>Log In</Link></Button>
-                    <Button><Link to={routes.signup}>Sign Up</Link></Button>
+                    <Link to={routes.home}><Button>Home</Button></Link>
+                    <Link to={routes.login}><Button>Log In</Button></Link>
+                    <Link to={routes.signup}><Button>Sign Up</Button></Link>
                 </Box>
             </Box>
         </>
