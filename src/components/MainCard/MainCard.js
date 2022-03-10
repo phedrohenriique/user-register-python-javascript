@@ -5,6 +5,7 @@ import {
   Button,
   useControllableState,
 } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
 import react from 'react';
 
 export default function MainCard() {
@@ -41,6 +42,5 @@ export default function MainCard() {
         <Button>Next Route!</Button>
       </Box>
     </Box>
-
   )
 }

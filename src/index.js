@@ -1,14 +1,22 @@
 import { ColorModeScript, ChakraProvider, theme } from '@chakra-ui/react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
+
 import { MainCard } from './components/MainCard';
+import { AppRouting } from './routes'
+
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <StrictMode>
     <ChakraProvider theme={theme}>
-      <MainCard/>
+      <BrowserRouter>
+        <Routes>
+          <AppRouting />
+        </Routes>
+      </BrowserRouter>
     </ChakraProvider>
   </StrictMode>,
   document.getElementById('root')
