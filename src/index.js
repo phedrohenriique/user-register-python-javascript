@@ -7,7 +7,8 @@ import {
   MainCard, 
   Navigator,
   Account,
-  Info 
+  Info,
+  LoginCard
 } from './components';
 
 import reportWebVitals from './reportWebVitals';
@@ -18,9 +19,8 @@ ReactDOM.render(
   <StrictMode>
     <ChakraProvider theme={theme}>
       <BrowserRouter>
-        <Navigator/>
         <Routes>
-          <Route path={routes.home} element={<Info/>}></Route>
+          <Route path={routes.home} element={<LoginCard/>}></Route>
           <Route path={routes.login} element={<Account></Account>}></Route>
         </Routes>
       </BrowserRouter>
